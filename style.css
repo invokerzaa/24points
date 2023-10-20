@@ -1,0 +1,362 @@
+.box {
+    background: url(../pic/bac2.png) center;
+    width: 99vw;
+    /*把背景图片放大到适合元素容器的尺寸，图片比例不变*/
+    position: absolute;
+    left: 0;
+    top: 0;
+   height: 120vh;
+   padding-bottom: 60%;
+
+
+}
+
+.cardBox {
+
+    width: 100%;
+    height: 300px;
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    /* 侧轴居中 */
+    align-items: center;
+
+
+}
+
+.pai {
+    float: left;
+    width: 150px;
+    height: 210px;
+    margin: 0px 20px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 0px;
+    cursor: pointer;
+    background-image: url(../pic/ace-159857.svg);
+    background-position: -7px -867px;
+}
+
+.button {
+    width: 140px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 1px 1px 1px #333;
+    border-radius: 5px;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    --color: #ffa260;
+    --hover: #ff8060;
+    color: var(--color);
+    -webkit-transition: 0.25s;
+    transition: 0.25s;
+
+}
+.disabledBtn{
+    width: 140px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    text-shadow:none;
+    background-color: rgb(172, 167, 167);
+    border-radius: 5px;
+    box-shadow:none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow:none;
+    border-color:#a8abae;
+    cursor: not-allowed;
+}
+
+.mark {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 15px;
+}
+
+.mark.one {
+    margin-left: 15px;
+}
+
+.button.gray {
+    color: #8c96a0;
+    text-shadow: 1px 1px 1px #fff;
+    border: 1px solid #dce1e6;
+    box-shadow: 0 1px 2px #fff inset, 0 -1px 0 #a8abae inset;
+    background: -webkit-linear-gradient(top, #f2f3f7, #e4e8ec);
+    background: -moz-linear-gradient(top, #f2f3f7, #e4e8ec);
+    background: linear-gradient(top, #f2f3f7, #e4e8ec);
+}
+
+.gray:hover {
+    background: -webkit-linear-gradient(top, #fefefe, #ebeced);
+    background: -moz-linear-gradient(top, #f2f3f7, #ebeced);
+    background: linear-gradient(top, #f2f3f7, #ebeced);
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    -webkit-transform: translateY(-0.25em);
+    transform: translateY(-0.25em);
+
+}
+
+.gray:active {
+    top: 1px;
+    box-shadow: 0 1px 3px #a8abae inset, 0 3px 0 #fff;
+    background: -webkit-linear-gradient(top, #e4e8ec, #e4e8ec);
+    background: -moz-linear-gradient(top, #e4e8ec, #e4e8ec);
+    background: linear-gradient(top, #e4e8ec, #e4e8ec);
+}
+
+
+
+.wordInputBox {
+    color: #fff;
+    font-weight: bolder;
+}
+
+input {
+    width: 200px;
+    height: 30px;
+    color: #fff;
+    font-size: large;
+    font-weight: 700;
+    transition: border linear .2s, box-shadow linear .5s;
+    -moz-transition: border linear .2s, -moz-box-shadow linear .5s;
+    -webkit-transition: border linear .2s, -webkit-box-shadow linear .5s;
+    outline: none;
+    border-color: rgba(93, 149, 242, .75);
+    box-shadow: 0 0 8px rgba(93, 149, 242, .105);
+    -moz-box-shadow: 0 0 8px rgba(93, 149, 242, .5);
+    -webkit-box-shadow: 0 0 8px rgba(93, 149, 242, 3);
+}
+
+.runButtonBox,
+.mathButtonBox,
+.wordInputBox,
+.resultBox {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* 侧轴居中 */
+    align-items: center;
+}
+
+.resultSuccess {
+    width: 500px;
+    height: 600px;
+    overflow: auto;
+    color: #fff;
+    float: left;
+    transition: border linear .2s, box-shadow linear .5s;
+    -moz-transition: border linear .2s, -moz-box-shadow linear .5s;
+    -webkit-transition: border linear .2s, -webkit-box-shadow linear .5s;
+    outline: none;
+    border-color: rgba(93, 149, 242, .75);
+    box-shadow: 0 0 8px rgba(93, 149, 242, .105);
+    -moz-box-shadow: 0 0 8px rgba(93, 149, 242, .5);
+    -webkit-box-shadow: 0 0 8px rgba(93, 149, 242, 3);
+    text-align: center;
+    background: rgba(187, 154, 227, 0.48);
+}
+
+/* 垂直滚动条样式 */
+/* 宽度 */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+/* 背景色 */
+::-webkit-scrollbar-track {
+    background-color: #f5f5f5;
+    opacity: 0.5;
+}
+
+/* 滑块颜色 */
+::-webkit-scrollbar-thumb {
+    background-color: #d290dd;
+    opacity: 0.5;
+}
+
+/* 水平滚动条样式 */
+/* 高度 */
+::-webkit-scrollbar {
+    height: 12px;
+}
+
+/* 背景色 */
+::-webkit-scrollbar-track {
+    background-color: #f5f5f5;
+    opacity: 0.5;
+}
+
+/* 滑块颜色 */
+::-webkit-scrollbar-thumb {
+    background-color: #d290dd;
+    opacity: 0.5;
+}
+
+.score {
+    background: #000;
+    width: 500px;
+    min-height: 600px;
+    float: right;
+    color: #000;
+    transition: border linear .2s, box-shadow linear .5s;
+    -moz-transition: border linear .2s, -moz-box-shadow linear .5s;
+    -webkit-transition: border linear .2s, -webkit-box-shadow linear .5s;
+    outline: none;
+    border-color: rgba(93, 149, 242, .75);
+    box-shadow: 0 0 8px rgba(93, 149, 242, .105);
+    -moz-box-shadow: 0 0 8px rgba(93, 149, 242, .5);
+    -webkit-box-shadow: 0 0 8px rgba(93, 149, 242, 3);
+    text-align: center;
+    background: rgba(187, 154, 227, 0.48);
+}
+
+
+
+.multiple-parent label {
+    font-size: 16px;
+}
+
+.multiple-parent input[type='checkbox']+label:before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: 1px solid rgba(0, 222, 255, 1);
+    border-radius: 3px;
+    margin-right: 3px;
+    margin-left: 14px;
+}
+
+.multiple-parent input[type='checkbox']:checked+label:before {
+    background-color: #00DEFF;
+    content: "\2714";
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+    line-height: 13px;
+
+}
+
+.multiple-parent input[type="checkbox"] {
+    display: none;
+}
+
+.multiple-parent {
+    display: none;
+    width: 450px;
+}
+
+.multiple-parent ul {
+    list-style: none;
+    width: 100%;
+    text-align: left;
+    border: 1px solid rgba(11, 212, 255, .93);
+    border-radius: 4px;
+    background: rgba(9, 86, 150, .27);
+    padding-left: 5px;
+    box-sizing: border-box;
+    height: 230px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+/*滚动条样式*/
+.multiple-parent ul::-webkit-scrollbar {
+    width: 2px;
+    height: 4px;
+}
+
+.multiple-parent ul::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background: rgb(78, 158, 151);
+}
+
+.multiple-parent ul::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 0;
+    background: rgba(202, 202, 202, 0.23);
+}
+
+.multiple-select {
+    width: 450px;
+    height: 30px;
+    border: 1px solid rgba(11, 212, 255, .93);
+    border-radius: 4px;
+    padding-right: 10px;
+    background: rgba(9, 86, 150, .27) right center no-repeat;
+    background-image: url("dropIcon.png");
+    padding-left: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-size: auto 80%;
+}
+
+.multiple-select span {
+    line-height: 24px;
+    color: #fff;
+}
+
+.multiple-parent label {
+    color: #fff;
+}
+
+.select-content {
+    display: inline-block;
+    border: 1px solid rgba(4, 255, 228, .93);
+    border-radius: 4px;
+    background: rgba(4, 255, 228, .4);
+    font-size: 15px;
+    height: 23px;
+    line-height: 23px;
+    margin: 2px 2px 0 2px;
+    padding: 0 3px;
+}
+
+.select-delete {
+    cursor: pointer;
+}
+
+.demo {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 30px;
+    font: bold 55px/100% "微软雅黑", "Lucida Grande", "Lucida Sans", Helvetica, Arial, Sans;
+    ;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.demo1 {
+    color: #fff;
+    text-shadow: 1px 1px rgba(197, 223, 248, 0.8), 2px 2px rgba(197, 223, 248, 0.8), 3px 3px rgba(197, 223, 248, 0.8), 4px 4px rgba(197, 223, 248, 0.8), 5px 5px rgba(197, 223, 248, 0.8), 6px 6px rgba(197, 223, 248, 0.8);
+}
+.answer{
+    font: bold 20px/100% "微软雅黑", "Lucida Grande", "Lucida Sans", Helvetica, Arial, Sans;
+    ;
+    color: rgb(160, 15, 80);
+    text-align: center;
+    text-transform: uppercase;
+}
+.resultNum{
+display: inline-block;
+width: 9%;
+}
+.resultMath{
+    display: inline-block;
+    width: 53%;
+    text-align: left;
+}
