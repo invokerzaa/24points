@@ -1,5 +1,5 @@
 .box {
-    background: url(../bac2.png) center;
+    background: url(./bac2.png) center;
     width: 99vw;
     /*把背景图片放大到适合元素容器的尺寸，图片比例不变*/
     position: absolute;
@@ -33,7 +33,7 @@
     color: #ffffff;
     font-size: 0px;
     cursor: pointer;
-    background-image: url(../ace-159857.svg);
+    background-image: url(./ace-159857.svg);
     background-position: -7px -867px;
 }
 
