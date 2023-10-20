@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-">
+	<title>动画效果</title>
+
+	<script type="text/javascript" src="./jquery-1.10.1.js"></script>
+	<script type="text/javascript" src="./index.js"></script>
+	</script>
+	<!-- <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" /> -->
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<style>
+		input {
+			cursor: pointer;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="box">
+		<div class="demo demo1">2&nbsp;4&nbsp;点&nbsp;小&nbsp;游&nbsp;戏</div>
+		<div class="cardBox">
+			<div id="pai0" class="pai">开</div>
+			<div id="pai1" class="pai">始</div>
+			<div id="pai2" class="pai">游</div>
+			<div id="pai3" class="pai">戏</div>
+			
+		</div>
+		<div class="mathButtonBox">
+			<input type="button" class="button gray" value="随机选牌" id="randomPai" />
+			<input type="button" class="button gray" value="查看答案" id="funCount" />
+			<input type="button" class="button gray" value="规则介绍"
+				onclick="alert('玩法：从扑克中任意抽出四张（数字表示为1－13），用加、减、乘、除的方法使结果成为24，每张牌只能用一次。一副牌（52张）中，任意抽取4张可有1820种不同组合，其中有458个牌组算不出24点。现在再和别人玩这个游戏，不怕了吧？');" />
+		</div>
+		<div class="wordInputBox">
+			<input type="button" class="button gray" value="自主选牌" id="freePai" />
+
+			
+			<div class="selectCard" style="display: none;">
+				<div class="multiple-select">
+					<span class="placeholder">请选择要展示的数据</span>
+				</div>
+				<div class="multiple-parent">
+					<ul id="selected1"></ul>
+				</div>
+			</div>
+			<input type="button" class="button gray" value="确定选牌"  id="surePai" style="display: none; " />
+			<input type="button" class="button gray" value="重置" id="reset" style="display: none;" />
+
+		</div>
+
+		
+		<div class="resultBox" >
+			<div id="result" class="resultSuccess" >
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>
